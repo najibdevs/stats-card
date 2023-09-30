@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(233, 47%, 7%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.main-card {
+  background: hsl(244, 38%, 16%);
+  max-width: 1250px;
+  display: flex;
+  margin: 0 1rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.details {
+  width: 50%;
+  padding: 5rem;
+}
+
+.details h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.details span {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  margin-bottom: 90px;
+  color: rgb(173, 173, 173);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.image_container {
+  width: 50%;
+  position: relative;
+}
+
+.row h2 {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.row p {
+  color: rgb(173, 173, 173);
+  margin-top: 5px;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsla(277, 100%, 42%, 0.5) 0%,
+    hsla(277, 100%, 42%, 0.5) 100%
+  );
+  pointer-events: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
